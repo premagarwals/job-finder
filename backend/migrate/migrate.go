@@ -18,8 +18,12 @@ func init() {
 }
 
 func clearDatabase(db *gorm.DB) {
-	if err := db.Exec("DELETE FROM jobs").Error; err != nil {
-		log.Fatalf("Could not clear jobs table: %v", err)
+	if db.Migrator().HasTable(&models.Job{}) {
+		if err := db.Exec("DELETE FROM jobs").Error; err != nil {
+			log.Fatalf("Could not clear jobs table: %v", err)
+		}
+	} else {
+		log.Println("Jobs table does not exist; no records to clear.")
 	}
 }
 

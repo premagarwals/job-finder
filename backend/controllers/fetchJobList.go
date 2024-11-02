@@ -45,6 +45,10 @@ func JobList(c *gin.Context) {
 
 	query := initializers.DB.Model(&models.Job{})
 
+	if jobData.JobRole != "" {
+		query = query.Where("job_role LIKE ?", jobData.JobRole)
+	}
+
 	if jobData.Discipline != "" {
 		query = query.Where("discipline = ?", jobData.Discipline)
 	}
@@ -86,6 +90,6 @@ func JobList(c *gin.Context) {
 	query.Find(&jobs)
 
 	c.JSON(200, gin.H{
-		"jobs": jobs,
+		jobData.JobRole: jobs,
 	})
 }
