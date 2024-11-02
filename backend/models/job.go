@@ -16,6 +16,6 @@ type Job struct {
 	MaxSalary          int32  `json:"max_salary"`
 	Profession         string `json:"profession"`
 	Discipline         string `json:"discipline"`
-	ExperienceRequired int8   `json:"experience_required"`
+	ExperienceRequired string `json:"experience_required"`
 	JobDescription     string `json:"job_description"`
 }

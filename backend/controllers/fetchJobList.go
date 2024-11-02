@@ -18,7 +18,7 @@ func JobList(c *gin.Context) {
 		Salary             int32  `json:"salary"`
 		Profession         string `json:"profession"`
 		Discipline         string `json:"discipline"`
-		ExperienceRequired int8   `json:"experience_required"`
+		ExperienceRequired string `json:"experience_required"`
 		JobDescription     string `json:"job_description"`
 		Limit              int32  `json:"limit"`
 		Offset             int32  `json:"offset"`
@@ -49,8 +49,8 @@ func JobList(c *gin.Context) {
 		query = query.Where("discipline = ?", jobData.Discipline)
 	}
 
-	if jobData.ExperienceRequired != 0 {
-		query = query.Where("experience_required <= ?", jobData.ExperienceRequired)
+	if jobData.ExperienceRequired != "" {
+		query = query.Where("experience_required = ?", jobData.ExperienceRequired)
 	}
 
 	if jobData.Salary != 0 {
