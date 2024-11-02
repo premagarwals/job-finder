@@ -1,0 +1,224 @@
+{
+    "disciplines": [
+        {
+            "name": "IT",
+            "professions": [
+                {
+                    "name": "Software Engineer",
+                    "job_roles": [
+                        "Front-End Developer",
+                        "Back-End Developer Intern",
+                        "Full-Stack Developer Intern",
+                        "Software Engineer Intern"
+                    ]
+                },
+                {
+                    "name": "Data Scientist",
+                    "job_roles": [
+                        "Data Analyst",
+                        "Machine Learning Engineer",
+                        "Big Data Engineer",
+                        "Data Analyst Intern"
+                    ]
+                },
+                {
+                    "name": "Cybersecurity Specialist",
+                    "job_roles": [
+                        "Cyber Forensics Analyst",
+                        "Security Architect",
+                        "Network Security Analyst",
+                        "Ethical Hacker",
+                        "Cybersecurity Intern"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Medicine",
+            "professions": [
+                {
+                    "name": "Nurse",
+                    "job_roles": [
+                        "Pediatric Nurse",
+                        "Nurse Practitioner",
+                        "Director of Nursing"
+                    ]
+                },
+                {
+                    "name": "Surgeon",
+                    "job_roles": [
+                        "Plastic Surgeon",
+                        "Orthopedic Surgeon",
+                        "Neurosurgeon"
+                    ]
+                },
+                {
+                    "name": "Physician",
+                    "job_roles": [
+                        "General Practitioner",
+                        "Cardiologist",
+                        "Pediatrician",
+                        "Clinical Research Director"
+                    ]
+                },
+                {
+                    "name": "Psychologist",
+                    "job_roles": [
+                        "Clinical Psychologist"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Business",
+            "professions": [
+                {
+                    "name": "Human Resources Manager",
+                    "job_roles": [
+                        "HR Generalist",
+                        "Recruitment Specialist",
+                        "HR Manager - Director"
+                    ]
+                },
+                {
+                    "name": "Marketing Specialist",
+                    "job_roles": [
+                        "SEO Specialist",
+                        "Brand Strategist",
+                        "Social Media Manager",
+                        "Marketing Intern",
+                        "Marketing Director",
+                        "Content Marketing Intern"
+                    ]
+                },
+                {
+                    "name": "Accountant",
+                    "job_roles": [
+                        "Forensic Accountant",
+                        "Tax Accountant"
+                    ]
+                },
+                {
+                    "name": "Business Manager",
+                    "job_roles": [
+                        "Operations Director"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Engineering",
+            "professions": [
+                {
+                    "name": "Civil Engineer",
+                    "job_roles": [
+                        "Structural Engineer",
+                        "Junior Civil Engineer"
+                    ]
+                },
+                {
+                    "name": "Mechanical Engineer",
+                    "job_roles": [
+                        "Mechanical Engineer",
+                        "Manufacturing Engineer",
+                        "Automotive Engineer",
+                        "HVAC Engineer",
+                        "Robotics Engineer",
+                        "Senior Mechanical Engineer - Director"
+                    ]
+                },
+                {
+                    "name": "Electrical Engineer",
+                    "job_roles": [
+                        "Power Systems Engineer",
+                        "Electrical Design Engineer Intern"
+                    ]
+                },
+                {
+                    "name": "Engineering",
+                    "job_roles": [
+                        "Project Manager - Director"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Education",
+            "professions": [
+                {
+                    "name": "School Counselor",
+                    "job_roles": [
+                        "Guidance Counselor",
+                        "Academic Counselor"
+                    ]
+                },
+                {
+                    "name": "Educational Administrator",
+                    "job_roles": [
+                        "School Administrator",
+                        "Academic Coordinator"
+                    ]
+                },
+                {
+                    "name": "Teacher",
+                    "job_roles": [
+                        "Special Education Teacher",
+                        "Language Teacher"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Law",
+            "professions": [
+                {
+                    "name": "Lawyer",
+                    "job_roles": [
+                        "Corporate Lawyer",
+                        "Intellectual Property Lawyer"
+                    ]
+                },
+                {
+                    "name": "Paralegal",
+                    "job_roles": [
+                        "Corporate Paralegal"
+                    ]
+                },
+                {
+                    "name": "Judge",
+                    "job_roles": [
+                        "Family Court Judge",
+                        "Judge - Administrative Law"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arts",
+            "professions": [
+                {
+                    "name": "Graphic Designer",
+                    "job_roles": [
+                        "Web Designer",
+                        "UX/UI Designer",
+                        "Game Designer",
+                        "Art Director"
+                    ]
+                },
+                {
+                    "name": "Musician",
+                    "job_roles": [
+                        "Music Producer",
+                        "Music Teacher"
+                    ]
+                },
+                {
+                    "name": "Writer",
+                    "job_roles": [
+                        "Content Writer"
+                    ]
+                }
+            ]
+        }
+    ]
+}
