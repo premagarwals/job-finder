@@ -14,6 +14,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/", controllers.Index)
+	r.POST("/job", controllers.JobCreate)
 
 	r.Run()
 }
