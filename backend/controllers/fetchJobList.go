@@ -46,7 +46,7 @@ func JobList(c *gin.Context) {
 	query := initializers.DB.Model(&models.Job{})
 
 	if jobData.JobRole != "" {
-		query = query.Where("job_role LIKE ?", jobData.JobRole)
+		query = query.Where("job_role = ?", jobData.JobRole)
 	}
 
 	if jobData.Discipline != "" {
@@ -58,7 +58,7 @@ func JobList(c *gin.Context) {
 	}
 
 	if jobData.Salary != 0 {
-		query = query.Where("min_salary <= ? AND max_salary >= ?", jobData.Salary, jobData.Salary)
+		query = query.Where("max_salary >= ?", jobData.Salary)
 	}
 
 	if jobData.JobRole != "" {
@@ -90,6 +90,6 @@ func JobList(c *gin.Context) {
 	query.Find(&jobs)
 
 	c.JSON(200, gin.H{
-		jobData.JobRole: jobs,
+		"jobs": jobs,
 	})
 }
