@@ -20,11 +20,15 @@ func main() {
 	r.Use(rateLimiter.LimitRequests)
 
 	r.GET("/", controllers.Index)
-	r.POST("/job", controllers.JobCreate)
 	r.GET("/job", controllers.JobList)
 	r.GET("/job/:id", controllers.JobRead)
-	r.PUT("/job/:id", controllers.JobUpdate)
-	r.DELETE("/job/:id", controllers.JobDelete)
+
+	r.POST("/login", controllers.Login)
+
+	auth := middleware.AuthMiddleware()
+	r.POST("/job", auth, controllers.JobCreate)
+	r.PUT("/job/:id", auth, controllers.JobUpdate)
+	r.DELETE("/job/:id", auth, controllers.JobDelete)
 
 	r.Run()
 }
