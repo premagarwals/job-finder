@@ -16,6 +16,7 @@ func main() {
 	r.GET("/", controllers.Index)
 	r.POST("/job", controllers.JobCreate)
 	r.GET("/job/:id", controllers.JobRead)
+	r.PUT("/job/:id", controllers.JobUpdate)
 
 	r.Run()
 }
